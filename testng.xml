@@ -1,0 +1,11 @@
+
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="ip" value="192.168.43.38"/>
+  <parameter name="browser" value="chrome"/>
+  
+    <classes>
+      <class name="Script.OrangeTC1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
