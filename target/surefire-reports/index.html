@@ -143,6 +143,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;ip&quot; value=&quot;192.168.43.38&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Script.OrangeTC1&quot;/&gt;
     &lt;/classes&gt;
@@ -196,12 +198,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testA')
 data.setCell(0, 2, 'Script.OrangeTC1')
-data.setCell(0, 3, 3665);
+data.setCell(0, 3, 6877);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -237,16 +239,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Script.OrangeTC1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApp(localhost, chrome)</span>
+                <span class="method-name">openApp(192.168.43.38, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testA</span>
-                <span class="method-start">4172 ms</span>
+                <span class="method-start">6735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=OrangeTC1.testA()[pri:1, instance:Script.OrangeTC1@e6e9...)</span>
-                <span class="method-start">7837 ms</span>
+                <span class="method-name">closeApp([TestResult name=testA status=SUCCESS method=OrangeTC1.testA()[pri:1, instance:Script.OrangeTC1@a12c...)</span>
+                <span class="method-start">13616 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
