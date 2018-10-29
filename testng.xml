@@ -1,9 +1,6 @@
 
 <suite name="Suite">
   <test name="Test">
-  <parameter name="ip" value="192.168.1.50"/>
-  <parameter name="browser" value="chrome"/>
-  
     <classes>
       <class name="Script.OrangeTC1"/>
     </classes>
