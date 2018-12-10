@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="ip" value="192.168.1.147"/>
-  <parameter name="browser" value="firefox"/>
+  <parameter name="area" value="MGroad"/>
+  <parameter name="city" value="Bengaluru"/>
   <test name="Test(failed)">
-    <parameter name="ip" value="192.168.1.147"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="area" value="MGroad"/>
+    <parameter name="city" value="Bengaluru"/>
     <classes>
-      <class name="TestNG.Grid">
+      <class name="TestNG.Parameter">
         <methods>
-          <include name="testGrid" invocation-numbers="0"/>
+          <include name="testA"/>
         </methods>
-      </class> <!-- TestNG.Grid -->
+      </class> <!-- TestNG.Parameter -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

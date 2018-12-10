@@ -25,7 +25,7 @@ public class AssertSoftAssert {
 		s.assertAll();// dont write any statements after this
 
 	}
-
+//Assert
 /*	@Test
 	public void testLogin1() {
 		WebDriver driver = new ChromeDriver();

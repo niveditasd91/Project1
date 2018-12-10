@@ -51,7 +51,7 @@ public class ListBoxSlv {
 		
 		
 		
-	//select and deselect all the options in reverse order
+//select and deselect all the options in reverse order
 		/*WebDriver driver=new ChromeDriver();
 		driver.get("file:///C:/Users/mege/Desktop/SLV.html");
 		WebElement listBox = driver.findElement(By.id("SLV"));
@@ -154,7 +154,7 @@ public class ListBoxSlv {
 		
 	// Print the options present in listBox with their occurance
       
-		WebDriver driver = new ChromeDriver();
+		/*WebDriver driver = new ChromeDriver();
 		driver.get("file:///C:/Users/mege/Desktop/SLV.html");
 		WebElement listBox = driver.findElement(By.id("SLV"));
 		Select select = new Select(listBox);
@@ -171,13 +171,13 @@ public class ListBoxSlv {
 			}
 		}
 		System.out.println(map);
-		
+		*/
 		
 		
 
 	// Check whether the option is duplicate in ListBox
 		
-		  /*WebDriver driver=new ChromeDriver();
+		 /* WebDriver driver=new ChromeDriver();
 		  driver.get("file:///C:/Users/mege/Desktop/SLV.html");
 		  WebElement listBox = driver.findElement(By.id("SLV")); 
 		  Select select=new Select(listBox);
@@ -201,9 +201,9 @@ public class ListBoxSlv {
 		  } 
 		  else {
 			  System.out.println(s+" is not duplicate");
-			  }
+			  }*/
 		 
-		*/
+		
 		
 
 	// Print all the options in the listBox without repeating options

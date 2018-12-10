@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
-    <parameter name="ip" value="192.168.1.50"/>
-    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Script.OrangeTC1">
         <methods>

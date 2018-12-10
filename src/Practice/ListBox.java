@@ -153,6 +153,8 @@ public class ListBox {
 		System.out.println("listbox is empty");
 	else
 		System.out.println("listbox is not empty");
+ 
+		
 		*/
 		
 //to check whether list box is sorted or not		
@@ -178,7 +180,7 @@ public class ListBox {
 			System.out.println("listbox is not in sorted order");
 	*/
 		
-//print the options present in listbox with their occurrence	
+/*//print the options present in listbox with their occurrence	
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.facebook.com");
 		WebElement listbox = driver.findElement(By.id("month"));
@@ -195,29 +197,44 @@ public class ListBox {
 	    	map.put(key, 1);
 	}
 		System.out.println(map);	
+		*/
 		
+	//check whether the listbox is empty or not
+		/*WebDriver driver=new ChromeDriver();
+		driver.get("http://www.facebook.com");
+		WebElement listbox = driver.findElement(By.id("month"));
+		Select select=new Select(listbox);
+		java.util.List<WebElement> allOptions = select.getOptions();
+		System.out.println(allOptions.size());
+		if(allOptions.isEmpty())
+			System.out.println("Listbox is empty");
+		else
+		System.out.println("Listbox is not empty");
+		}*/
+
 		
+	WebDriver driver=new ChromeDriver();
+	driver.get("file:///C:/Users/mege/Desktop/SLV.html");
+//	driver.findElement(By.id(id))
+
 	
 		
-	
-	
 		
-		
-	
+	}}
 			
 		
 		
 		
 		
+	
 		
 		
 		
 		
 		
 		
-		
-	}
-}
+	
+
 
 
 

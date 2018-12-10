@@ -6,18 +6,18 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Parameter {
-	@Parameters({"city","area"})
+	/*@Parameters({"city","area"})
 	@Test
 	public void testA(@Optional("Delhi")String c,@Optional("market")String a) {
 		Reporter.log(c + a, true);
-	}
+	}*/
 	
 
 	
-	/*@Parameters({"city","area"})
+	@Parameters({"city","area"})
 	@Test
-	public void testA(String c,String a) {
+	public void testA(@Optional("pune")String c,@Optional("ahmednagar")String a) {
 		Reporter.log(c+a, true);
 	}
-	*/
+	
 }

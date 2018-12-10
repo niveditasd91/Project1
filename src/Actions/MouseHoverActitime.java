@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class MouseHoverActitime {
-	static
+ 	static
 	{
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 	}
@@ -19,7 +19,7 @@ public class MouseHoverActitime {
 		Actions action=new Actions(driver);
 		action.moveToElement(menu).perform();
 		driver.findElement(By.linkText("Simple Time Tracking")).click();
-		
+		driver.close();
 	}
 
 }

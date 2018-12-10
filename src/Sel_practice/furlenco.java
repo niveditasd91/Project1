@@ -1,5 +1,7 @@
 package Sel_practice;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,9 +14,14 @@ public class furlenco {
 
 	public static void main(String[] args) {
 
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.furlenco.com");
-		driver.findElement(By.xpath("(//div[@class='menu-link-btn-label'])[18]")).click();
+		
+		  WebDriver driver = new ChromeDriver();
+		  driver.get("https://www.furlenco.com");
+		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  driver.findElement(By.xpath("//div[text()='Bengaluru']")).click();
+		 driver.findElement(By.xpath("(//div[text()='Living Room'])[2]")).click();
+		 driver.findElement(By.xpath("//h1[contains(text(),'Pico Three')]")).click();
+		  }
+		 
 
 	}
-}
