@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.617 s <<< FAILURE! - in TestSuite
-testA(Script.OrangeTC1)  Time elapsed: 6.017 s  <<< FAILURE!
-org.openqa.selenium.support.ui.UnexpectedTagNameException: 
-Element should have been "select" but was "option"
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'MEGE-PC', ip: '10.0.2.15', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_161'
-Driver info: driver.version: unknown
-	at Script.OrangeTC1.testA(OrangeTC1.java:71)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.493 s - in TestSuite

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
+  <parameter name="ip" value="10.0.2.15"/>
+  <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="Script.OrangeTC1"/>
+      <class name="TestNG.Grid"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

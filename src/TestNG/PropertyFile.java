@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import org.testng.annotations.Test;
 
-public class HandlingMultipleFiles {
+public class PropertyFile {
 	@Test
 	public static void testGrid() throws FileNotFoundException, IOException {
 		Properties p=new Properties();
