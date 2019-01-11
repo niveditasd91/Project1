@@ -21,6 +21,19 @@
 	<classpathentry kind="lib" path="poi/poi-scratchpad-3.17.jar"/>
 	<classpathentry kind="lib" path="poi/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.14.0 (1).jar"/>
+	<classpathentry kind="lib" path="extent_reports/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="extent_reports/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="extent_reports/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="extent_reports/extentreports-3.1.5.jar"/>
+	<classpathentry kind="lib" path="extent_reports/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="extent_reports/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="extent_reports/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="extent_reports/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="extent_reports/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="extent_reports/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="extent_reports/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="extent_reports/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="log4j/log4j-1.2.17.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

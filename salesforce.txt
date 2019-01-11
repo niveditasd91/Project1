@@ -1,0 +1,292 @@
+typically a part of a company's CRM system, 
+is a system that automatically records all the stages in a sales process.
+ SFA includes a contact management system which tracks all contact that has been made with a given customer,
+ the purpose of the contact, and any follow up that may be needed. 
+This ensures that sales efforts are not duplicated, 
+reducing the risk of irritating customers. 
+SFA also includes a sales lead tracking system, which lists potential customers through paid phone lists, 
+or customers of related products. Other elements of an SFA system can include sales forecasting, 
+order management and product knowledge.
+
+
+
+ Standard Objects: The objects provided by salesforce.com is called standard objects.
+ Examples of standard objects are accounts, contacts, 
+opportunities, Leads, products, campaigns, cases, users, contracts, Report, and dashboards, etc.
+
+Custom Object: The objects created by us are called custom objects.
+ Custom objects store information that is unique and important to your 
+organization. Custom objects are the heart of any application. 
+Custom objects provide a structure for sharing data.
+
+
+Custom objects have properties such as
+Custom fields.
+Relationship to other objects.
+Page Layouts.
+A custom user interface tab
+
+Creating Salesforce Custom Object
+
+To create custom object go to 
+Setup -> Build-> Create -> Objects ->
+Click on new custom object  button and enter label name, plural label and object name.
+
+And also enter Record Name according to the data type. 
+There are two data types available to create record name, those are
+
+TEXT.
+Auto Number.
+And also we have the following optional features while creating an object.
+
+Allow reports: If we check this check box, then only these objects are available to create reports.
+Allow Activities: If we check this check box, then we can create activities on this object.
+Track Field History: If we check this check box then only we are to track fields.
+ We can track up to 20 fields for a single object.
+
+creating a custom field
+
+A field is like a custom Database column.
+ Object field Store the data for our records.
+ Salesforce by default provide few fields with salesforce standard objects those are called standard fields. 
+We cannot delete salesforce standard field. If we want we can change label name. 
+The field created by us are called Custom field. We can delete a custom field in Salesforce.
+
+
+object to another object relationship
+The platform supports following relationship types
+
+Master-Detail relationship
+Lookup relationship
+Many-to-Many relationship.
+
+Master-Detail (1:n)
+A parent-child relationship in which the master object controls certain behaviors of the detail object.
+
+When a record of the master object is deleted, its related detail records are also deleted.	
+The detail record inherits the sharing and security settings of its master record.
+The master-detail relationship field is required on the page layout of the detail record.
+
+You can define master-detail relationships between custom objects or between a custom object 
+and a standard object. However, the standard object cannot be on the detail side of a relationship 
+with a custom object. In addition, you cannot create a master-detail relationship in which the User 
+or Lead objects are the master.
+
+
+This type of relationship links two objects together but has no effect on deletion or security. Unlike master-detail fields, lookup fields are not automatically required. When you define a lookup relationship, data from one object can appear as a custom related list on page layouts for the other object. See the Salesforce online help for details.
+
+Child row not automatically deleted when a parent row is deleted
+No inherited sharing.
+25 lookup relation relationships allowed per object.
+Lookup field on child not necessarily required. 
+Many-to-Many
+
+You can use master-detail relationships to model many-to-many relationships between any two objects.
+ A many-to-many relationship allows each record of one object to be linked to multiple records from 
+another object and vice versa.
+
+To create a many-to-many relationship, simply create a custom junction object with two master-detail
+ relationship fields, each linking to the objects you want to relate.
+
+
+How many relationships included in SFDC & What are they? 
+
+We are having three types of relationships, they are
+
+Lookup Relationship
+Master-Detail Relationship
+Many-to-Many relationship 
+
+
+--> What is a “Lookup Relationship”?
+
+Up to 25 allowed for object
+Parent is not a required field.
+No impact on security and access.
+No impact on deletion.
+Can be multiple layers deep.
+A Lookup field is not required.
+
+
+
+--> What is “Master-Detail Relationship”?
+
+Master-Detail relationship is the Parent-child relationship.
+ In which Master represents Parent and detail represents Child. 
+If Parent is deleted then Child also gets deleted. 
+Roll-up summary fields can only be created on Master records which will calculate the SUM, AVG,
+ MIN of the Child records.
+
+Up to 2 allowed to object.
+Parent field on a child is required.
+Access to parent determines access to children.
+Deleting parent automatically deletes child.
+A child of one master-detail relationship cannot be the parent of another.
+Lookup field on page layout is required.
+
+
+-->Does an object can have both relationships (Lookup Relationship & Master Detail Relationship) at a time?
+
+Yes, single object can have both relationships at a time.
+
+-->What is a “Self Relationship”?
+
+A self Relationship is a lookup relationship to the same object.
+
+Suppose let’s take an object “Merchandise”. Here we can create relationship 
+in between the Merchandise to Merchandise (same object) object. That is called “Self Relationship”.
+
+-->What is “Many to Many Relationships”?
+
+Allow for the relationship of two objects in a many-to-many fashion.
+
+How we achieve the “Many-to-Many Relationship”?
+
+By using Junction Object we can achieve this relationship,
+ here junction object is having Master- Detail Relationship with different objects
+ (Ex.Students & Courses).
+ Using this Master to Detail Relationship, we can create the Many-to-Many Relationship in between the objects.
+
+--> What are the main things need to consider in the “Master-Detail Relationship”?
+
+Record level access is determined by the parent,
+
+-->Field dependencies
+Field dependency means, controlling a fields value based on the other field.
+ For example, there are two fields called Country & State.
+ I want to display only states related specific selected country when I select country. 
+
+-->Validation rules
+Validation rules in salesforce contains a formula or expressions that evaluates the data in one or more  fields
+ in a record to meet the standards and returns a vale “True” or “False”.
+ Validation rules displays error message to the user when the Condition is “False”.
+Mandatory on child for reference of parent, cascade delete (if you delete the parent, it can cascade delete the child).
+
+here are five types of Rules in salesforce and the priority of each rule is according to their order.
+ Salesforce processes rules in the following order.
+
+Validation Rules.
+Assignment Rules.
+Auto-response Rules.
+Workflow Rules.
+
+
+Escalation Rules.
+What are the main things need to consider in “Lookup Relationship”?
+
+Loosely coupled, not going to have all the above rules which are existed in master detail relationship.
+
+Self-relationship is always lookup to self-relation object type. In many to many we actually create a junction object in the middle, it does lookup for the bound objects that are ultimately being bounded in a many to many way.
+
+Can we convert the lookup relationship to Master Detail relationship?
+
+Yes, We can convert the lookup relationship to master detail relationship only if all the existing record has valid lookup field values.
+
+Can we create Master Detail relationship on existing records?
+
+No. first we have to create the lookup relationship then populate the value on all existing record and then convert it.
+
+Interview 
+
+for validation rules
+https://help.salesforce.com/articleView?id=fields_useful_field_validation_formulas.htm&type=5
+
+
+--->Page Layout
+
+The organization of fields, custom links, and related lists on an object detail or edit page.
+Used to organize UI pages for your users:
+
+Which fields, related lists, and Custom links a user’s sees.
+Field properties – visible, read-only and required.
+Page section customizations.
+NOTE: Establish unique layouts for different business scenarios.
+
+-->record types
+Record Types
+
+Record types allow you to associate different business processes and
+ subset of pick list value to different users based on their user profile.
+
+They are used to drive which page layouts users see when viewing records, based on their user profile.
+
+Benefits of record types:
+
+ Tailors user interaction experience to specific business needs.
+
+Allows for easier administration as there are fewer fields to maintain.
+
+Page Layout:
+– How detail and edit pages are organized
+– Page section customizations
+– Which fields, related lists, and Custom Links a users sees
+– Field properties – visible, read-only and required
+Record Types:
+– Allows you to define different sets of picklist values for both standard and custom picklists
+– Record Types help you implement your custom business processes
+
+
+When are the Record types used?
+
+Record Types are used to assign the different Page layouts to different users based on their profiles. 
+And to enable different sets of Standard/Custom Picklist values for two different users using the same page
+ layout.
+
+search layout
+By using searchlayouts, we can customize which Sobject fields display for users in search results,
+ look up dialogs, and the lists on custom tab home pages. 
+We can also specify a different set of fields to show in each searchlayout. 
+The settings apply to all users in your organization.
+ And also we can specify which buttons to display in custom list views.
+
+opportunity split
+Opportunity Splits allow you to allocate credits to multiple team members for an opportunity.
+
+For example two members working on an opportunity, 
+If you want to split credits of closed – won opportunity 
+credits to both then we can uses opportunity splits.
+
+here are two types of opportunity splits those are Revenue Splits    and overlay splits
+
+Revenue Splits: This type of splits allows you to allocate credits to team members/salesreps who are directly responsible for an opportunity.
+ Use splits that total 100% of the opportunity amount.
+Overlay Splits: This type of splits allows you to credit supporting (not directly responsible) team members,
+ use splits that can total any percentage of the opportunity amount, including percentages over 100%.
+
+To enable opportunity teams follow below instructions.
+
+Setup -> Build -> Customize -> Opportunity Team -> click on settings ->enable team selling and save.
+ See the below screen for reference.
+
+To enable opportunity splits follow below instructions.
+
+Setup -> Build -> Customize -> Opportunity Team -> click on Opportunity Split and 
+click on set up opportunity splits. See the below screen for reference.
+
+
+Salesforce approval process is an automated process and your organization can use to approve records in Salesforce,
+ An approval process is combination of steps for a record to be approved and person has to approve it each step.
+A step can apply to all the records to that object or just record that meets the certain criteria.
+ An approval process also specifies the actions to take when a record is approved, rejected, recalled, or first submitted for approval.
+
+Simple or multi-step approval processes to automate and enforce the approval of virtually anything in your company.
+
+---->Approval process
+https://www.salesforcetutorial.com/salesforce-approval-process/
+
+
+---->workflow management
+https://www.salesforcetutorial.com/salesforce-workflow-automation-workflow-management/
+
+--->Importing accounts or contacts
+https://www.salesforcetutorial.com/import-accountscontacts/
+
+
+
+
+
+
+
+
+
+

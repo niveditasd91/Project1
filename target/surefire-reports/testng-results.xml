@@ -1,62 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Hiiiiiiiiiiiiiiii]]>
-    </line>
-    <line>
-      <![CDATA[Test:demo is pass ]]>
-    </line>
-    <line>
-      <![CDATA[TestName:demo Status:PASS]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="14825" started-at="2018-12-18T16:47:32Z" finished-at="2018-12-18T16:47:47Z">
+  <suite name="Suite" duration-ms="57" started-at="2019-01-09T06:02:31Z" finished-at="2019-01-09T06:02:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="14825" started-at="2018-12-18T16:47:32Z" finished-at="2018-12-18T16:47:47Z">
-      <class name="Practice.DemoMaven">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:Practice.DemoMaven@843fce]" name="openApp" is-config="true" duration-ms="14756" started-at="2018-12-18T16:47:32Z" finished-at="2018-12-18T16:47:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[localhost]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Test" duration-ms="57" started-at="2019-01-09T06:02:31Z" finished-at="2019-01-09T06:02:32Z">
+      <class name="TestNG.PropertyFile">
+        <test-method status="PASS" signature="testGrid()[pri:0, instance:TestNG.PropertyFile@1975490]" name="testGrid" duration-ms="14" started-at="2019-01-09T06:02:32Z" finished-at="2019-01-09T06:02:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Practice.DemoMaven@843fce]" name="closeApp" is-config="true" duration-ms="0" started-at="2018-12-18T16:47:47Z" finished-at="2018-12-18T16:47:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=demo status=SUCCESS method=DemoMaven.demo()[pri:0, instance:Practice.DemoMaven@843fce] output=Hiiiiiiiiiiiiiiii]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TestName:demo Status:PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method status="PASS" signature="demo()[pri:0, instance:Practice.DemoMaven@843fce]" name="demo" duration-ms="0" started-at="2018-12-18T16:47:47Z" finished-at="2018-12-18T16:47:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Hiiiiiiiiiiiiiiii]]>
-            </line>
-            <line>
-              <![CDATA[Test:demo is pass ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- demo -->
-      </class> <!-- Practice.DemoMaven -->
+        </test-method> <!-- testGrid -->
+      </class> <!-- TestNG.PropertyFile -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
